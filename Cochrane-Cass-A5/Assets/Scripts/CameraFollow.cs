@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour
     {
         if (target.position.y > transform.position.y)
         {
-            Vector3 newPosition = new Vector3(transform.position.x, target.position.y, transform.position.z);
+            Vector3 newPosition = new Vector3(transform.position.x, target.position.y - 1.5f, transform.position.z);
             transform.position = newPosition;
         }
     }
